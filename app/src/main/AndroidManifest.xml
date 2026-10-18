@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="false"
+        android:label="Minimal IP Widget"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <receiver
+            android:name=".MinimalIpWidgetProvider"
+            android:exported="true"
+            android:label="Minimal IP Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/minimal_ip_widget_info" />
+        </receiver>
+    </application>
+</manifest>

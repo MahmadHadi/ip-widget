@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Minimal IP Widget</string>
+    <string name="widget_description">Minimal text-only localhost widget</string>
+</resources>
